@@ -1,0 +1,59 @@
+.card {
+  background: #505050ba;
+  position: relative;
+  width: 300px;
+  // border: 1px solid white;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  color: white;
+  height: 360px;
+  padding: 15px;
+  -webkit-box-shadow: 10px 12px 15px 7px rgba(255, 255, 255, 0.28);
+  -moz-box-shadow: 10px 12px 15px 7px rgba(255, 255, 255, 0.28);
+  box-shadow: 10px 12px 15px 7px rgba(255, 255, 255, 0.28);
+  &--price {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    &__quantity {
+      display: flex;
+      align-items: center;
+      width: 60px;
+      border: 1px solid white;
+      height: 20px;
+      background: #727171ba;
+      justify-content: space-around;
+      border-radius: 5px;
+      padding: 3px 4px;
+      button {
+        font-size: 25px;
+        background: transparent;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+    }
+    &__basket {
+      background: #727171ba;
+      font-size: 16px;
+      padding: 5px 10px;
+      border: 1px solid yellowgreen;
+      border-radius: 6px;
+      color: white;
+      cursor: pointer;
+    }
+  }
+  &--close {
+    position: absolute;
+    font-size: 35px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+}

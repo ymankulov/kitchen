@@ -1,0 +1,133 @@
+#header {
+  padding: 30px 0;
+  background: #343434;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &--search {
+      position: relative;
+      width: 400px;
+      input {
+        width: 100%;
+        font-size: 24px;
+        padding: 7px 40px;
+        outline: none;
+        border-radius: 5px;
+        border: none;
+      }
+      &__icon {
+        position: absolute;
+        top: 4px;
+        right: -75px;
+        font-size: 35px;
+        color: black;
+      }
+    }
+    &--icons {
+      display: flex;
+      align-items: center;
+      gap: 80px;
+      &__basket {
+        cursor: pointer;
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: white;
+        border: none;
+      }
+      &__user {
+        cursor: pointer;
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: white;
+        border: none;
+      }
+      &__dark {
+        display: flex;
+        align-items: center;
+        &--left {
+          cursor: pointer;
+          width: 60px;
+          height: 60px;
+          font-size: 30px;
+          border-radius: 30px 0 0 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: none;
+        }
+        &--right {
+          cursor: pointer;
+          width: 60px;
+          height: 60px;
+          font-size: 30px;
+          border-radius: 0 30px 30px 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: none;
+          border-left: 2px solid black;
+        }
+      }
+    }
+  }
+  .modal {
+    z-index: 50;
+    width: 650px;
+    height: 400px;
+    background: white;
+    position: fixed;
+    top: 30%;
+    left: 25%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    &--password {
+      position: relative;
+      input {
+        font-size: 30px;
+        padding: 7px 30px;
+        border: 2px solid black;
+        border-radius: 10px;
+        outline: none;
+      }
+      a {
+        position: absolute;
+        top: 8px;
+        right: 15px;
+        cursor: pointer;
+        font-size: 35px;
+      }
+    }
+    button {
+      font-size: 30px;
+      padding: 10px 40px;
+      background: #000;
+      color: white;
+      border-radius: 10px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+    }
+    &--close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 40px;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import "../src//assets/styles/Header.scss";
+@import "../src//assets/styles/Home.scss";
+@import "../src//assets/styles/AdminCreate.scss";
+@import "../src//assets/styles/ProductCard.scss";
+@import "../src/assets/styles/basket.scss";
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #000;
+}
+button {
+  cursor: pointer;
+  border: none;
+}
+input {
+  outline: none;
+  border: none;
+}
